@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<title>Aadhaar Login</title>
+<title>Track PVC Order</title>
 <style>
     body {
         background-image: url('pic.jpg');
@@ -20,7 +20,7 @@
         position: relative;
         width: 100%;
     }
-    .login-container {
+    .track-order-container {
         background-color: white;
         padding: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -29,54 +29,38 @@
         text-align: center;
         margin: auto;
     }
-    .login-container h2 {
+    .track-order-container h2 {
         color: #000046;
         margin-bottom: 20px;
     }
-    .login-container .form-control {
+    .track-order-container .form-control {
         margin-bottom: 15px;
     }
-    .login-container .button_btn {
+    .track-order-container .button_btn {
         background-image: linear-gradient(to right, rgb(2, 13, 81), rgb(25, 176, 220));
         color: white;
         font-weight: bold;
         width: 100%;
         height: 40px;
     }
-    .login-container .captcha {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .login-container .captcha img {
-        width: 60%;
-    }
 </style>
 </head>
 <body>
     <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-        <div class="login-container">
-            <h2>Login to Aadhaar via OTP</h2>
+        <div class="track-order-container">
+            <h2>Track PVC Card Order</h2>
             <form>
                 <div class="form-group">
                     <label for="aadhaarNumber">Enter Aadhaar Number</label>
                     <input type="text" id="aadhaarNumber" class="form-control" placeholder="Enter Aadhaar Number">
                 </div>
-                <div class="form-group">
-                    <label for="captcha">Enter Captcha</label>
-                    <div class="captcha">
-                        <img src="th.jpg" alt="Captcha Image">
-                        <i class="fas fa-volume-up" title="Audio Captcha"></i>
-                    </div>
-                    <input type="text" id="captcha" class="form-control" placeholder="Enter Captcha">
-                </div>
-                <button type="button" id="loginWithOTP" class="button_btn">Login With OTP</button>
+                <button type="button" id="trackPvcOrder" class="button_btn">Track Order</button>
             </form>
         </div>
     </div>
     <script>
-        document.getElementById("loginWithOTP").addEventListener("click", function() {
-            window.location.href = "services.html"; 
+        document.getElementById("trackPvcOrder").addEventListener("click", function() {
+            alert('PVC Card tracking details are sent to your registered mobile number!');
         });
     </script>
 </body>
