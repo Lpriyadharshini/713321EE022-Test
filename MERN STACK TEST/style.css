@@ -1,0 +1,27 @@
+/* styles.css */
+body {
+    padding-top: 70px;
+}
+
+.header .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.header .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Change to the desired text color */
+    font-size: 12px; /* Adjust size as needed */
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

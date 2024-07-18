@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>my Aadhar-Unique Identification</title>
+<style>
+    h2 {
+        color: #000046;
+        margin: 0;
+    }
+    body {
+        background-image: url(pic.jpg);
+        background-position: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        margin: 0;
+        position: relative;
+        width: 100%;
+    }
+    .header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 25px;
+        background-color: white; 
+    }
+    .header img {
+        background-color: white;
+    }
+    .header h2 {
+        flex-grow: 1;
+        text-align: center;
+        margin-left: -50px; 
+    }
+    .info-box {
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    .info-box img {
+        width: 40%;
+        height: 60%;
+        margin-bottom: 10px;
+    }
+    .button_btn {
+        background-image: linear-gradient(to right, rgb(2, 13, 81), rgb(25, 176, 220));
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        height: 30px;
+    }
+    .login-text {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    .info-text {
+        text-align: left;
+        margin-right: 20px;
+    }
+    p{
+        color: aliceblue;
+    }
+</style>
+</head>
+<body>  
+    <div class="header">
+        <img src="em.jpg" width="40" class="img-fluid">
+        <h2>Unique Identification Authority of India</h2>
+        <img src="Aadhar.png" width="150" class="img-fluid">
+    </div>
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="info-text">
+                    <h1>Welcome to </h1>
+                    <h1>my Aadhaar</h1>
+                    <p>Click on Login button to explore online demographics update service, Aadhaar PVC card ordering & tracking, and more value-added services offered by UIDAI.</p>
+                    <p>Your mobile number is required to be registered with the Aadhaar to login.</p>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="info-box">
+                    <img src="fingerPrint.jpg" alt="Sample Image" class="img-fluid"><br>
+                    <button type="button" class="button_btn" onclick="location.href='login.html';">Login</button>
+                    <p class="login-text">Login with OTP</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
